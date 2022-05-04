@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int a[4],n,i;
+    int a[40],n,i;
     int max1,max2,int_min;
     cin >> n;
     for (int i = 0;i<n;i++)
