@@ -3,14 +3,15 @@ using namespace std;
 
 int main()
 {
-    int a[40],n,i;
-    int max1,max2,int_min;
+    int n;
+    int max1,max2;
     cin >> n;
+    int a[n];
     for (int i = 0;i<n;i++)
     {
         cin >> a[i];
     }
-    max1=max2=int_min;
+    max1=max2=INT_MIN;
     for (int i = 0;i<n;i++)
     {
         if (a[i]>=max1)
@@ -23,8 +24,8 @@ int main()
             max2=a[i];
         }
     }
-    cout << max1;
-    cout << max2;
+    cout << max1 << endl;
+    cout << max2 << endl;
 
     return 0;
 }
