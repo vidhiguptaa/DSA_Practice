@@ -1,6 +1,6 @@
-#include<bits/stdc++.h>
-using namespace std;
-bool isPalindrome(string s)
+class Solution {
+public:
+    bool isPalindrome(string s)
 {
             
     int start = 0;
@@ -21,7 +21,7 @@ bool isPalindrome(string s)
             }
             else
             {
-                if(s[start++] != s[end--])
+                if(s[start++] = s[end--])
                 {
                     return false;
                     
@@ -33,18 +33,5 @@ bool isPalindrome(string s)
     }
     return true;
 }
-int main()
-{
-    string s;
-    cin >> s;
-    if(isPalindrome(s)==true)
-    {
-        cout << "true";
-        
-    }
-    else
-    {
-        cout << "false";
-    }
-    return 0;
-}
+
+};
