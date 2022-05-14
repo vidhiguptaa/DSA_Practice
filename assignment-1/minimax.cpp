@@ -1,22 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main() 
+int main()
 {
-int val,n;
-cin >> n;
-long long int sum=0;
-vector<int> array;
-for(int i=0; i<n; i++)
-{
-        cin>>val;
-        sum+=val;
+    int n;
+    cin >> n;
+    int sum=0;
+    int max= INT_MIN;
+    int min = INT_MAX;
+    int arr[n];
+    for (int i=0; i < n ; i++)
+    {
+        cin >> arr[i];
+        if (arr[i]> max)
+        {
+            max=arr[i];
+        }
+        if (arr[i]< min)
+        {
+            min=arr[i];
+        }
+        sum= sum + arr[i];
         
-        array.push_back(val);
-}
-
-        sort(array.begin(), array.end());   
-        
-
-        cout<<sum-array[n-1]<<" "<<sum-array[0];  
-        return 0;
+    }
+    cout << sum-max << endl;
+    cout << sum-min << endl;
+    return 0;
 }
