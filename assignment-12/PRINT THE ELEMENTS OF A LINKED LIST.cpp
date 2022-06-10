@@ -1,10 +1,10 @@
 void printLinkedList(SinglyLinkedListNode* head)
 {
-    if(head == NULL)
+    int data;
+  
+    while(head!=NULL)
     {
-        return;
+        cout << head->data <<endl;
+        head=head->next;
     }
-    cout << head -> data << endl;
-    printLinkedList(head -> next);
-    
 }
