@@ -1,18 +1,15 @@
-#include<bits/stdc++.h>
-using namespace std;
-
-void reversestr(string &str)
-{
-    int n = str.size();
-    for(int i=0; i<n/2 ; i++ )
+class Solution {
+public:
+    void reverseString(vector<char>& s)
     {
-        swap(str[i], str[n - i - 1]);
+        int i = 0, j = s.size()-1;
+        while(i < j){
+            char ch = s[i];
+            s[i] = s[j];
+            s[j] = ch;
+            i++;
+            j--;
+        }
+        
     }
-}
-int main()
-{
-   string str;
-   cin >> str;
-   reversestr(str);
-   cout << str;
-}
+};
